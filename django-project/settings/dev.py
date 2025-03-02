@@ -1,6 +1,9 @@
-import os
+import os, sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+print("BASE_DIR -> ", BASE_DIR)
 
 SECRET_KEY = 'dummy'
 
@@ -13,7 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -26,7 +30,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_RULCONF = 'django-project.urls'
+ROOT_URLCONF = 'django-project.urls'
 
 TEMPLATES = [
     {
