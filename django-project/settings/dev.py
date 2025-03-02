@@ -117,7 +117,7 @@ CACHE = {
 
 # session with django-redis
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
-SESSION_CACHE_ALIAS = 'session'
+# SESSION_CACHE_ALIAS = 'session'
 
 # log
 LOGGING = {
