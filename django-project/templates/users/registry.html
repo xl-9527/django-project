@@ -5,8 +5,7 @@
     <title>用户注册</title>
 </head>
 <body>
-<form action="/registry" method="post">
-    {{ csrf_token }}
+<form action="/registry/" method="post">
     <input type="text" name="username">
     <input type="password" name="password">
     <input type="submit" value="注册"></input>
