@@ -154,4 +154,5 @@ LOGGING = {
     },
 }
 
+# 设置用户模型类为自定义的
 AUTH_USER_MODEL = 'users.DjangoUser'
